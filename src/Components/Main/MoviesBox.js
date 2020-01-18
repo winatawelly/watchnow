@@ -1,7 +1,7 @@
 import React, {Fragment, useEffect, useState} from 'react'
 import MovieCard from './MovieCard'
 import axios from 'axios'
-import {Redirect , useHistory , Link} from 'react-router-dom'
+import {Redirect , Link} from 'react-router-dom'
 import {getRecommendations} from '../../Actions/recommend'
 import {connect} from 'react-redux'
 
