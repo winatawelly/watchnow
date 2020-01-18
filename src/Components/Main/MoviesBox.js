@@ -7,7 +7,6 @@ import {connect} from 'react-redux'
 
 
 const MoviesBox = (props) => {
-    const history = useHistory()
     let count = 0;
     const [data,
         setData] = useState();
@@ -85,4 +84,8 @@ const MoviesBox = (props) => {
     )
 }
 
-export default connect(null, {getRecommendations})(MoviesBox)
+const mapStateToProps = (state) => ({
+    loading:state.recommend.loading
+})
+
+export default connect(mapStateToProps, {getRecommendations})(MoviesBox)
