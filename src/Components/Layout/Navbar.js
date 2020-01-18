@@ -44,10 +44,7 @@ const Navbar = () => {
                 <div className="collapse navbar-collapse" id="navbarResponsive">
                     <ul className="navbar-nav ml-auto">
                         <li className="nav-item">
-                            <a className="nav-link js-scroll-trigger" href="#about">About</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link js-scroll-trigger" href="#about">View Code</a>
+                            <a className="nav-link js-scroll-trigger" href="https://github.com/winatawelly/watchnow">View Code</a>
                         </li>
                     </ul>
                 </div>
