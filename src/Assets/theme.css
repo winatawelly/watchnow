@@ -4,10 +4,15 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
  */
 
+body,
+html {
+    width: auto !important;
+    overflow-x: hidden !important;
+}
 
 #mainNav {
     min-height: 56px;
-    background-color: black;
+    background-color: transparent;
 }
 
 #mainNav .navbar-toggler {
@@ -34,6 +39,11 @@
 #mainNav .navbar-nav .nav-item:focus {
     outline: none;
     background-color: transparent;
+}
+
+#mainNav.navbar-shrink {
+    background-color: black;
+    color: rgba(255, 255, 255, 0.5);
 }
 @media (min-width: 992px) {
     #mainNav {
@@ -103,7 +113,7 @@
     letter-spacing: 0.8rem;
     background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
     -webkit-text-fill-color: transparent;
-    
+
     -webkit-background-clip: text;
 }
 
@@ -292,6 +302,7 @@ footer {
     color: rgba(255, 255, 255, 0.8);
     padding-top: 8rem;
     height: auto;
+    width: 100vw;
     padding-bottom: 3rem;
     background: linear-gradient(to bottom, rgba(22, 22, 22, 0.99) 0%, rgba(22, 22, 22, 0.9) 75%, #161616 100%), url("./img/landing-bg.jpg");
 }
@@ -303,7 +314,7 @@ footer {
 
 .moviesBox {
     display: flex;
-    width: 100vw;
+    width: 100%;
     margin: 10px;
     justify-content: center;
     flex-wrap: wrap;
@@ -322,19 +333,17 @@ footer {
 
 }
 
-
 .movie-title {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
-
 @media (min-width: 992px) {
     .content-section h1 {
         font-size: 2rem;
@@ -367,35 +376,34 @@ footer {
 
     }
 
-    .button-div{
+    .button-div {
         display: flex;
-        width:auto;
+        width: auto;
         justify-content: space-around;
     }
 
-    .button-div button{
-        height:50px;
-        width:150px;
+    .button-div button {
+        height: 50px;
+        width: 150px;
         font-size: 10px;
 
     }
 
 }
 
-.button-div{
+.button-div {
     display: flex;
-    width:auto;
+    width: auto;
     justify-content: space-around;
-    margin-top:10px
+    margin-top: 10px;
 }
 
-.button-div button{
-    height:50px;
-    width:150px;
+.button-div button {
+    height: 50px;
+    width: 150px;
     font-size: 8px;
 
 }
-
 
 .dark-overlay {
     background-color: rgba(0, 0, 0, 0.8);
@@ -431,8 +439,6 @@ footer {
 }
 
 .sorry-sign {
-    padding-top:30vh;
-    padding-bottom:50vh;
+    padding-top: 30vh;
+    padding-bottom: 50vh;
 }
-
-
